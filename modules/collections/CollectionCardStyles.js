@@ -23,7 +23,11 @@ export const StyledCollectionCard = styled.div`
   }
 
   > img, > video {
-    width: 100%;
+    width: 250px;
+  }
+
+  video{
+    max-width: 250px !important;
   }
 
   .weth-img {

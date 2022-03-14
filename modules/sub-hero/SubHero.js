@@ -12,18 +12,25 @@ const SubHero = () => {
     const element = ref.current;
     gsap
       .timeline({
-        scrollTrigger: {
+        ScrollTrigger: {
           trigger: ".hry",
           start: "top bottom",
-          end: " +=300",
+          end: " +=300"
           //   scrub: true,
-
         }
       })
-      .from(".hry", { y: -100, ease: Power3.easeOut, duration: 3 })
+      .from(".hry", {
+        lazy: false,
+        y: -100,
+        ease: Power3.easeOut,
+        duration: 3,
+        opacity: 0
+      })
       .from(
-        "button",
+        ".market-btn",
         {
+          lazy: false,
+          opacity: 0,
           y: +100,
           ease: Power3.easeOut,
           duration: 3
@@ -35,7 +42,7 @@ const SubHero = () => {
     <StyledSubHero ref={ref} className="gsap">
       <h2 className="hry">Shop full collection on Opensea</h2>
       <Link href="https://opensea.io/collection/keemthedj">
-        <button className="market-btn"> Marketplace</button>
+        <button className="market-btn"> Marketplacess</button>
       </Link>
     </StyledSubHero>
   );

@@ -16,7 +16,11 @@ const nftListData = [
   { id: 1, name: "HKD Jojo", price: 8, vidUrl: "/images/hkd-1.mp4" },
   { id: 2, name: "HKD Tobi", price: 9, vidUrl: "/images/hkd-4.mp4" },
   { id: 3, name: "HKD Kamsi", price: 10, vidUrl: "/images/hkd-5.mp4" },
-  { id: 4, name: "HKD Mike  ", price: 10, vidUrl: "/images/hkd-6.mp4" }
+  { id: 4, name: "HKD Folarin", price: 10, vidUrl: "/images/hkd-6.mp4" },
+  { id: 5, name: "HKD Simi", price: 4, vidUrl: "/images/hkd-2.mp4" },
+  { id: 6, name: "HKD Oba", price: 2, vidUrl: "/images/hkd-4.mp4" },
+  { id: 7, name: "HKD Kodi", price: 12, vidUrl: "/images/hkd-1.mp4" },
+  { id: 8, name: "HKD Tunde", price: 10, vidUrl: "/images/hkd-2.mp4" }
 ];
 export default function Home() {
   const [htdData, setHtdData] = useState([]);

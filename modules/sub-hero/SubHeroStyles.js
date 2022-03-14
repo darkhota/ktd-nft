@@ -40,9 +40,14 @@ export const StyledSubHero = styled.div`
       font-size: 20px;
     }
   }
-  @media (max-width: 356px) {
+  @media (max-width: 760px) {
     padding: 0.1rem;
     height: 40vh;
+    > h2 {
+      margin-bottom: 1rem;
+    }
+  }
+  @media (max-width: 356px) {
     > h2 {
       font-size: 16px;
     }
