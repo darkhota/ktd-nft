@@ -111,6 +111,7 @@ export const StyledMain = styled.div`
   .group-details {
     display: flex;
     flex-direction: column;
+    width: 100%
   }
 
   .mobile-copy {
