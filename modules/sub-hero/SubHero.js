@@ -8,41 +8,38 @@ gsap.registerPlugin(ScrollTrigger);
 const SubHero = () => {
   const ref = useRef(null);
 
-  useEffect(() => {
-    const element = ref.current;
-    gsap
-      .timeline({
-        ScrollTrigger: {
-          trigger: ".hry",
-          start: "top bottom",
-          end: " +=300"
-          //   scrub: true,
-        }
-      })
-      .from(".hry", {
-        lazy: false,
-        y: -100,
-        ease: Power3.easeOut,
-        duration: 3,
-        opacity: 0
-      })
-      .from(
-        ".market-btn",
-        {
-          lazy: false,
-          opacity: 0,
-          y: +100,
-          ease: Power3.easeOut,
-          duration: 3
-        },
-        "-=2"
-      );
-  });
+  // useEffect(() => {
+  //   const element = ref.current;
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: ".hry",
+  //         start: "top bottom",
+  //         end: " +=300"
+
+  //         //   scrub: true,
+  //       }
+  //     })
+  //     .from(".hry", {
+  //       y: -100,
+  //       ease: Power3.easeOut,
+  //       duration: 3
+  //     })
+  //     .from(
+  //       ".market-btn",
+  //       {
+  //         y: +100,
+  //         ease: Power3.easeOut,
+  //         duration: 3
+  //       },
+  //       "-=2"
+  //     );
+  // });
   return (
     <StyledSubHero ref={ref} className="gsap">
       <h2 className="hry">Shop full collection on Opensea</h2>
       <Link href="https://opensea.io/collection/keemthedj">
-        <button className="market-btn"> Marketplacess</button>
+        <button className="market-btn"> Marketplace</button>
       </Link>
     </StyledSubHero>
   );
